@@ -1,0 +1,63 @@
+/* Style du formulaire */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style des champs */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style des boutons */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style des éléments radio et case à cocher */
+.form-check-label {
+    margin-left: 5px;
+}
+
+/* Style des options de sélection */
+select.genre {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style des éléments radio et case à cocher */
+.form-check-input {
+    margin-right: 5px;
+}
+
+/* Style pour les éléments spécifiques */
+#choicePhp {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Style pour les éléments spécifiques */
+#radio_masculin:checked ~ .form-check-label[for="masculin"],
+#radio_feminin:checked ~ .form-check-label[for="feminin"] {
+    color: #007bff;
+}

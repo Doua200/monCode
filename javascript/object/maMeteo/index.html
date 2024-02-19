@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="meteo.js"></script>
+    <script src="main.js" defer></script> 
+
+</head>
+<body>
+    <div>
+        <h1>Weather</h1>
+    </div>
+  <div class="buttons">
+    <!-- <button id="meteo">Metéo</button> -->
+    <button id="relocalize">Relocaliser</button>
+  </div>
+  <select name="langue" id="langue">
+    <option value="fr">francais</option>
+    <option value="en">english</option>
+</select>
+  <input type="radio" name="unit" id="unit-metric" checked>metrique
+  <input type="radio" name="unit" id="unit-imperial">imperial
+  <input type="text" id="city"> 
+  <button id="btn_valider">Valider</button>
+    <div class="contenu">
+        <p> Aucune info</p>
+        <div id="imagediv"></div>
+    </div>
+  
+</body>
+</html>

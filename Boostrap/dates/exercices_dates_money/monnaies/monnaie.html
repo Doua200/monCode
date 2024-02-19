@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="monnaie.css">
+    <script src="fonctions.js"></script>
+    <script src="monnaie.js" defer></script>
+    
+    
+</head>
+<body>
+    <div class="col-6"> <input type="text" id="zoneSaisie" name="zoneSaisie">
+        <input type="text" id="zoneResultat" name="zoneResultat" readonly>
+        <div class="keyboard">
+            <button class="nombreTape" id='btn_tape' value="0" >0</button>
+            <button class="nombreTape" id='btn_tape' value="1" >1</button>
+            <button class="nombreTape" id='btn_tape' value="2" >2</button>
+            <button class="nombreTape" id='btn_tape' value="3" >3</button>
+            <button class="nombreTape" id='btn_tape' value="4" >4</button>
+            <button class="nombreTape" id='btn_tape' value="5" >5</button>
+            <button class="nombreTape" id='btn_tape' value="6" >6</button>
+            <button class="nombreTape" id='btn_tape' value="7" >7</button>
+            <button class="nombreTape" id='btn_tape' value="8" >8</button>
+            <button class="nombreTape" id='btn_tape' value="9" >9</button>
+            <button class="nombreTape" id='btn_tape' value="," >,</button>
+    
+        </div>
+        <div class="convertir">
+            <button id="convertir btn_primary" >Convertir</button>
+        </div>
+    </div>
+    <div class="col-6"> 
+        <div class="moneychoice">
+        <div class="depart">
+            <input type="radio" id="euro" name="euro" value="1">
+            <label for="euro">Euro</label>
+            <input type="radio" id="dollar" name="dollar" value="1.08">
+            <label for="dollar">Dollar</label>
+        </div>
+        <div class="arrivee">
+            <input type="radio" id="dollar" name="dollar" value="1.08">
+            <label for="dollar">Dollar</label>
+            <input type="radio" id="euro" name="euro" value="1">
+            <label for="euro">Euro</label>
+        </div>
+    </div>
+    </div>
+   
+   
+      
+
+</body>
+</html>

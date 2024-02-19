@@ -1,0 +1,9 @@
+#chargement {
+    background-color: rgb(194, 122, 168);
+    min-height: 100vw;
+}
+
+#contenu {
+    background-color: whitesmoke;
+    display: none;
+}
