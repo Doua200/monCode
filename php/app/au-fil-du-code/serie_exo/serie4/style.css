@@ -1,0 +1,14 @@
+p {
+    background-color: yellow;
+    margin: 10px;
+    border-radius:5px ;
+    width:fit-content;
+    
+}
+
+
+
+/* $nbActualites = isset($_COOKIE[nbActualités])? $_COOKIE['nbActualites']:10;
+if(isset($_POST)['submit'])
+$nbActualites= $_POST['nbActualites'];
+setcookie('nbActualites', $nbActualites, 'time( + (86400*30), "/");') */

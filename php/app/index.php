@@ -24,7 +24,7 @@ else
     <title>Document</title>
 </head>
 <body>
-
+Welcome at Home
 <?php
  if ($dir!=".")
      include 'hey-browser/template-nav.php';    
