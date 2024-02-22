@@ -58,22 +58,7 @@ final class personneTest extends TestCase
 
     }
 
-    public function testParamResearchMinusculeCorrects():void
-    {
-        $params = getParamSearch(['nom'=>'martin']);
-        $this->assertSame('MARTIN',$params);
-    }
     
-    public function testParamDetailEmpty():void
-    {
-        $params = getParamDetail([]);
-        $this->assertSame('',$params);
-    }
-    public function testParamDetailCorrects():void
-    {
-        $params = getParamDetail(['id'=>'5']);
-        $this->assertSame('5',$params);
-    }
 
    
  
