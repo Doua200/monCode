@@ -38,7 +38,7 @@ function getParamSearch($pGetRecieved)
     // Vérifier si la clé 'nom' existe dans le tableau $pGetRecieved
    if (isset($pGetRecieved['nom'])) {
        // Si oui, retourner la valeur associée à la clé 'nom'
-       return $pGetRecieved['nom'];
+       return strtoupper($pGetRecieved['nom']);
    } else {
        // Si non, retourner une chaîne vide
        return '';
@@ -47,17 +47,13 @@ function getParamSearch($pGetRecieved)
 
 function getParamDetail($pGetRecieved)
 {
-   // Vérifier si la clé 'detail' existe dans le tableau $pGetRecieved
-      if (isset($pGetRecieved['detail'])) {
-          // Si oui, retourner la valeur associée à la clé 'detail'
-          return $pGetRecieved['detail'];
-      } else {
-          // Si non, retourner une valeur par défaut ou déclencher une exception selon le cas
-          // Dans cet exemple, nous retournons une chaîne vide, mais vous pouvez adapter cette logique selon vos besoins
-          return '';
-      }
-  
+       if (isset($pGetRecieved['id'])) {
+       return $pGetRecieved['id'];
+    } else {
+              return '';
+    }
 }
+
 
 function showPage(String $pTemplate,$data = [])
 {

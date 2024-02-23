@@ -9,9 +9,10 @@ class Personne
    public string $resume;
    public DateTime $date;
 
-    public function __construct($prenom,$nom,$date ,$resume) {
-        $this->nom = $nom;
-        $this->prenom = $prenom;
+
+    public function __construct(string $prenom,string $nom,DateTime $date ,string $resume) {
+        $this->nom = strtoupper($nom);
+        $this->prenom = ucfirst($prenom);
         $this->resume = $resume;
         $this->date = $date;
     }
@@ -19,6 +20,12 @@ class Personne
        public function getPresentation(): string {
         return "je m\'appelle $this->prenom . $this->nom  .$this->resume .$this->date";
     }
-}
- 
 
+    public static function create(string $pJson):Personne
+    {
+        $objet = json_decode($pJson);
+        $date = new DateTime($objet->date);
+       
+        return new Personne($objet->prenom,$objet->nom,$date ,$objet->resume );
+    }
+}

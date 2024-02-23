@@ -21,7 +21,7 @@ class ListePersonnes
         $object = json_decode($jsonData, true);
         $this->liste = new ArrayObject();
         foreach ($object as $key => $personne) {
-            $this->liste->append(new Personne($personne["prenom"], $personne["nom"], new DateTime($personne["date"]), $personne["resume"]));
+            $this->liste->append(new Personne(ucfirst($personne["prenom"]), strtoupper($personne["nom"]), new DateTime($personne["date"]), $personne["resume"]));
         }
 
     }

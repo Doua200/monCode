@@ -1,0 +1,11 @@
+{
+    "name": "doua20/aventures",
+    "description": "un super projet",
+    "license": "commons",
+    "autoload": {
+        "psr-4": {
+            "aventures\\": "src/"
+        }
+    },
+    "require": {}
+}
