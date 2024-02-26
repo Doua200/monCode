@@ -22,6 +22,6 @@ class Personne
     }
     static function createFromTable(Array $array):Personne
     {
-        return new Personne($array['salutation'],$array['prenom'],$array['nom'],$array['salutation'],$array['date'],$array['identifiant'],$array['password'],$array['genre'],$array['pnewb']);
+        return new Personne($array['salutation'],$array['prenom'],$array['nom'],$array['date'],$array['identifiant'],$array['password'],$array['genre'],$array['pnewb']);
     }
 }
