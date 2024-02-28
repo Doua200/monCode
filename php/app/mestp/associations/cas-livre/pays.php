@@ -1,8 +1,19 @@
 <?php
-class Genre 
+class Pays 
 {
-    public string $livre;
-    public string $auteur;
-    public string $pays;
+    private string $_nomPays;
+
+
+    public function __construct(string $_nomPays) {
+        $this->_nomPays= $_nomPays;
+        }
+
+ public function getNomPays():string {
+            return $this->_nomPays;
+        }
+
+
 }
+
+
 ?>
