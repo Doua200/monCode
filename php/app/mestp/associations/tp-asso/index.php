@@ -1,7 +1,6 @@
 <?php
-// association/index.php
-// importation des classes!
-require_once 'acteur.php';
+
+require_once 'acteurs.php';
 require_once 'realisateur.php';
 require_once 'film.php';
 

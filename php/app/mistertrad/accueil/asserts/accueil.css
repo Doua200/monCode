@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #f8eeee;
+   }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #9d2323;
+}
+
+nav ul li a {
+    background-color: #555;
+    border-radius: 10%;
+}
+
+nav .logo {
+    text-align: left;
+    margin:10px;
+
+  }

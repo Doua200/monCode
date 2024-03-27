@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MisterTrad</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Votre barre de navigation ici -->
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="left-column">
+            <h2>Présentation de MisterTrad</h2>
+            <img src="logoMT-sansfd.png" alt="Logo MisterTrad">
+            <p>Bienvenue chez MisterTrad, votre guichet unique pour une multitude de services 
+                et de produits de qualité en Côte d'Ivoire.</p> 
+            <p>Explorez nos offres d'import-export, tourisme, commerce général, distribution de lait en poudre et dérivés,
+                 ainsi que nos ventes de matériels de bureau, informatiques et accessoires.</p> 
+            <p>Chez MisterTrad, nous sommes déterminés à vous offrir des solutions efficaces et innovantes pour répondre
+                     à tous vos besoins. Découvrez notre engagement envers l'excellence dès aujourd'hui !</p>
+            <!-- Autres informations sur MisterTrad -->
+        </div>
+        <div class="right-column">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="post">
+                <!-- Votre formulaire ici -->
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service :</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Choisissez un service</option>
+                        <option value="Import-Export">Import-Export</option>
+                        <option value="Tourisme & Events">Tourisme & Events</option>
+                        <option value="Commerce Général">Commerce Général</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="attachment">Pièce jointe :</label>
+                    <input type="file" id="attachment" name="attachment">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Envoyer" class="btn">
+                    <input type="reset" value="Effacer" class="btn">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenu de la page -->
+
+    <footer>
+        <!-- Votre pied de page ici -->
+    </footer>
+</body>
+</html>

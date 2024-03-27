@@ -1,34 +1,45 @@
 <?php
+require_once "genre.php";
+
 class Livre {
-    private $_titre;
-    private $_annee;
-    private $_date;
-    private $_isbn;
-    private $_resume;
+    private string $titre;
+    private int $annee;
+    private string $isbn;
+    private string $resume;
+    private array $auteurs;
+    private string $genre;
 
-    public function __construct($titre, $annee, $date, $isbn, $resume) {
-        $this->_titre = $titre;
-        $this->_annee = $annee;
-        $this->_date = $date;
-        $this->_isbn = $isbn;
-        $this->_resume = $resume;
+    public function __construct(string $titre, int $annee, string $isbn, string $resume, Auteur $auteurs, string $genre) {
+        $this->titre = $titre;
+        $this->annee = $annee;
+        $this->isbn = $isbn;
+        $this->resume = $resume;
+        $this->auteurs =[];
+        $this->genre = $genre;
     }
 
-    
-    public function getTitre():string {
-          return $this->_titre;
+    public function getTitre(): string {
+        return $this->titre;
+    }
+    public function getAnnee(): int {
+        return $this->annee;
+    }
+    public function getISBN(): string {
+        return $this->isbn;
+    }
+    public function getResume(): string {
+        return $this->resume;
+    }
+    public function ajouterAuteur(Auteur $auteur) {
+        $this->auteurs[] = $auteur;
     }
 
-    public function getDateSortie():int {
-        return $this->_date;
+    public function getAuteurs(): array {
+        return $this->auteurs;
     }
-
-    public function getISBN():string {
-        return $this->_isbn;
-    }
-
-    public function getResume():string {
-        return $this->_resume;
+    public function getGenre(): string {
+        return $this->intitule;
     }
 }
+
 ?>

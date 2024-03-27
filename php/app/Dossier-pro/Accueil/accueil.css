@@ -1,0 +1,31 @@
+nav {
+  
+    justify-content: justify;
+    background-color: brown;
+  }
+  
+  .logo-title {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+       }
+  
+  .logo-title img {
+    width: 120px; 
+  }
+  
+  .page-links {
+    text-align: center; /* Pour centrer les liens horizontalement */
+  }
+  
+  .page-links ul {
+    display: flex;
+    justify-content: space-around; /* Espace égal entre les éléments */
+    padding: 0; /* Supprime le remplissage par défaut */
+  }
+  
+  .nav-item {
+    flex: 1; /* Distribue l'espace de manière égale entre les éléments */
+    text-align: center; /* Pour centrer le texte à l'intérieur des liens */
+  }
+  
